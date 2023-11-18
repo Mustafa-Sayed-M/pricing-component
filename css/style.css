@@ -37,3 +37,77 @@ body {
     overflow-x: hidden !important;
     font-family: 'Montserrat', sans-serif !important;
 }
+/* Start App */
+/* Start Part Head */
+.app {
+    padding: 100px 0;
+    min-height: 100vh;
+    position: relative;
+}
+.app::after,
+.app::before {
+    z-index: -1;
+    position: absolute;
+}
+.app::after {
+    top: 0;
+    right: 0;
+    content: url(../images/bg-top.svg);
+}
+.app::before {
+    left: 0;
+    bottom: 0;
+    content: url(../images/bg-bottom.svg);
+}
+.app .head {
+    text-align: center;
+}
+.app .head h2 {
+    margin-bottom: 15px;
+    color: var(--Grayish-Blue);
+}
+.app .head .select {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.app .head .select span {
+    color: var(--Light-Grayish-Blue);
+}
+.app .head .select .btn-select {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-image: var(--Linear-Gradient);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.app .head .select .btn-select .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--Very-Light-Grayish-Blue);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.app .head .select .btn-select.monthly {
+    justify-content: end;
+}
+.app .head .select .btn-select.annually {
+    justify-content: start;
+}
+/* End Part Head */
+/* End App */
