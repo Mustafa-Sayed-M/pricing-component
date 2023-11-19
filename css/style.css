@@ -60,6 +60,7 @@ body {
     content: url(../images/bg-bottom.svg);
 }
 .app .head {
+    margin-bottom: 60px;
     text-align: center;
 }
 .app .head h2 {
@@ -110,4 +111,103 @@ body {
     justify-content: start;
 }
 /* End Part Head */
+/*  */
+.app .pricing-components {
+    display: flex;
+    padding: 40px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.app .pricing-components .pricing-component {
+    padding: 60px 20px;
+    text-align: center;
+    width: calc(100% / 3);
+    background-color: var(--Very-Light-Grayish-Blue);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 20px -10px var(--Dark-Grayish-Blue);
+}
+.app .pricing-components .pricing-component h4,
+.app .pricing-components .pricing-component .price {
+    margin-bottom: 10px;
+}
+.app .pricing-components .pricing-component h4 {
+    color: var(--Dark-Grayish-Blue);
+}
+.app .pricing-components .pricing-component .price {
+    display: none;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.app .pricing-components .pricing-component .price.annually.active {
+    display: flex;
+}
+.app .pricing-components .pricing-component .price.monthly.active {
+    display: flex;
+}
+.app .pricing-components .pricing-component .price span {
+    font-size: 1.2rem;
+}
+.app .pricing-components .pricing-component .price h1 {
+    font-size: 3rem;
+}
+.app .pricing-components .pricing-component .features {
+    margin-bottom: 20px;
+}
+.app .pricing-components .pricing-component .features ul li {
+    padding: 15px 0;
+    border-top: solid 1px var(--Grayish-Blue);
+}
+.app .pricing-components .pricing-component .features ul li:last-of-type {
+    border-bottom: solid 1px var(--Grayish-Blue);
+}
+.app .pricing-components .pricing-component button.btn-learn-more {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    color: var(--Very-Light-Grayish-Blue);
+    background-image: var(--Linear-Gradient);
+}
+.app .pricing-components .professional-component {
+    padding-top: 100px;
+    color: var(--Very-Light-Grayish-Blue);
+    background-image: var(--Linear-Gradient);
+}
+.app .pricing-components .professional-component h4 {
+    color: var(--Very-Light-Grayish-Blue);
+}
+.app .pricing-components .professional-component .features ul li {
+    border-color: var(--Very-Light-Grayish-Blue);
+}
+.app .pricing-components .professional-component button.btn-learn-more {
+    background-image: none;
+    color: hsl(237, 63%, 64%);
+    background-color: var(--Very-Light-Grayish-Blue);
+}
+@media (max-width: 768px) {
+    .app .pricing-components {
+        row-gap: 20px;
+    }
+    .app .pricing-components .pricing-component {
+        width: 100%;
+    }
+    .app .pricing-components .professional-component {
+        padding-top: 60px;
+    }
+}
+/*  */
 /* End App */
